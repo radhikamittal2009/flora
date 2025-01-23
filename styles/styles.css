@@ -1,0 +1,349 @@
+/* section body START*/
+* {
+    border: none;
+}
+
+
+body {
+    background-color: #37534c;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button {
+    border-radius: 8px;
+    padding: 0.5rem;
+    box-shadow: none;
+    text-decoration: none;
+    font-style: bold;
+}
+
+h2 {
+    color: #6d0132;
+    align-content: center;
+    text-align: center;
+}
+
+/* section body END*/
+
+
+/* section nav START */
+nav {
+    background-color: #37534C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li {
+    padding: 0.5em;
+    gap: 2rem;
+}
+
+nav a:link {
+    color: #F4F0E0;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #F4F0E0;
+}
+
+nav a:visited {
+    color: #C4CD7B;
+    text-decoration: none;
+}
+
+nav img {
+    width: 10rem;
+    height: auto;
+}
+
+@media only screen and (min-width:640px) {
+    nav {
+        background-color: #37534C;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+}
+/* section nav ENDS */
+
+
+/* section hero START */
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-color: #C4CD7B;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+#ourStory {
+    padding: 7rem;
+    color: #6d0132;
+}
+
+@media only screen and (min-width:640px) {
+    .hero {
+        flex-direction: row;
+    }
+
+    h2 {
+        font-size: 28pt;
+    }
+}
+
+/* section hero ENDS */
+
+
+/* section shopFlowers START */
+.shopContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    background-color: #F4F0E0;
+    padding: 5rem;
+
+}
+
+.flowerCard {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+        0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.flowerImage {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flowerImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image scales properly to fill the container */
+}
+
+.shopFlowers img {
+    width: 100%;
+    height: auto;
+}
+
+.flowerInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    color: #6d0132;
+}
+
+.shopContainer button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 0%;
+    background-color: #6d0132;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.shopContainer button:hover {
+    color: #ffffff;
+    background-color: #37534C;
+}
+
+#h2-shopFlowers {
+    color: #37534C;
+    background-color: #F4F0E0;
+    padding: 5rem 5rem 0rem 5rem;
+    margin: 0;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+@media only screen and (min-width:1025px) {
+    .shopContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        background-color: #F4F0E0;
+        padding: 5rem;
+    }
+}
+
+@media screen and (min-width: 639px) and (max-width: 1024px) {
+    .shopContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        background-color: #F4F0E0;
+        padding: 5rem;
+    }
+}
+
+/* section shopFlowers END */
+
+/* section interactiveSessions START */
+.interactiveSessions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #37534C;
+    padding: 5rem;
+    box-sizing: border-box;
+
+}
+
+.interactiveSessions img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#h2-interactiveSessions {
+    background-color: #37534C;
+    padding: 5rem 5rem 0rem 5rem;
+    margin: 0;
+    color: #F4F0E0;
+}
+
+.interactiveSessions h2 {
+    color: #6d0132;
+}
+
+.interactiveSessions button {
+    background-color: #6d0132;
+    color: #F4F0E0;
+    font-size: 20px;
+    border-radius: 0%;
+    padding: 1rem;
+}
+
+.interactiveSessions button:hover {
+    color: #ffffff;
+    background-color: #37534C;
+}
+
+#ses1-info {
+    background-color: #C4CD7B;
+    color: #6d0132;
+    padding: 4rem;
+}
+
+#ses2-info {
+    background-color: #C4CD7B;
+    color: #6d0132;
+    padding: 4rem;
+}
+
+/* These are the grids for the mobile version with each element stacked on the other */
+@media only screen and (min-width:1025px) {
+    .interactiveSessions {
+        display: grid;
+        gap: 0rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'ses1-img ses1-info'
+            'ses2-info ses2-img';
+    }
+
+    #ses1-img {
+        grid-area: ses1-img;
+    }
+
+    #ses1-info {
+        grid-area: ses1-info;
+    }
+
+    #ses2-info {
+        grid-area: ses2-info;
+    }
+
+    #ses2-img {
+        grid-area: ses2-img;
+    }
+
+    .interactiveSessions h2 {
+        text-align: left;
+    }
+
+}
+
+/* section interactiveSessions ENDS */
+
+
+/* section footer START */
+footer {
+    background-color: #6d0132;
+    margin: 0px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@media only screen and (min-width:640px) {
+    footer ul {
+        flex-direction: row;
+    }
+}
+
+footer li {
+    color: #F4F0E0;
+    padding: 0.5em;
+    gap: 2rem;
+}
+
+footer a:link {
+    color: #F4F0E0;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: #C4CD7B;
+    text-decoration: none;
+}
+
+footer img {
+    width: 10rem;
+    height: auto;
+}
+
+/* section footer ENDS */
